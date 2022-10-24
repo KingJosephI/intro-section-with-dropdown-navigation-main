@@ -14,6 +14,36 @@ a {
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  min-height: 3.125rem;
+}
+header .logo {
+  margin-right: 3.125rem;
+  margin-top: 0.625rem;
+}
+header nav {
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  gap: 1.25rem;
+}
+header nav ul .login {
+  margin-left: auto !important;
+}
+header nav ul a {
+  color: #808080;
+  font-weight: 500;
+}
+header nav ul .register a {
+  border: 0.0625rem solid #808080;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
+}
+
 body {
   font-size: 1rem;
+  padding: 1rem 2rem;
 }/*# sourceMappingURL=index.css.map */

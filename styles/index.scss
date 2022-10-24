@@ -1,6 +1,8 @@
 @use './abstracts/' as *;
+@use './header' as *;
 
 
 body {
   font-size: rem(16);
+  padding: rem(16) rem(32);
 }
