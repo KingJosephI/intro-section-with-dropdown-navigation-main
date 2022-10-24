@@ -1,3 +1,6 @@
-@use './reset' as *;
-@use './font' as *;
-@use './functions' as *;
+@use './abstracts/' as *;
+
+
+body {
+  font-size: rem(16);
+}
