@@ -52,12 +52,6 @@ header nav ul .register a:hover {
   border-color: #000;
 }
 
-body {
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  font-family: "Epilogue", sans-serif;
-}
-
 section .content {
   display: flex;
   margin-top: 3.125rem;
@@ -90,14 +84,28 @@ section .content p {
   padding-right: 4.375rem;
 }
 section .content .learn-more-button {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.015625rem;
   background-color: #000;
+  border: 0.09375rem solid #000;
   color: #fff;
   font-weight: 600;
   padding: 0.9375rem 1.5625rem;
   border-radius: 0.625rem;
 }
+section .content .learn-more-button:hover {
+  background-color: #fff;
+  color: #000;
+}
 section .partners {
   display: flex;
   gap: 1.25rem;
   margin-top: 6.25rem;
+}
+
+body {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-family: "Epilogue", sans-serif;
 }/*# sourceMappingURL=index.css.map */
