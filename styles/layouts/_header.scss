@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   min-height: rem(50);
+  padding: 0 rem(40);
 
   a {
     font-size: rem(14);
@@ -67,7 +68,7 @@
   .header {
     display: flex;
     justify-content: space-between;
-
+   
     &__menu-item {
       display: none;
     }
