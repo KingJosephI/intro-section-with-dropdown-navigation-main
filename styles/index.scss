@@ -5,4 +5,64 @@
 body {
   font-size: rem(16);
   padding: rem(16) rem(32);
+  font-family: 'Epilogue', sans-serif;
+}
+
+section {
+  .content {
+    display: flex;
+    margin-top: rem(50);
+    padding: 0 rem(150);
+    gap: rem(20);
+    // height: 80vh;
+
+    &__description {
+      margin-top: rem(70);
+      max-height: 100%;
+    }
+
+    picture {
+      // width: 100%;
+      // max-height: 100%;
+      // width: 700px;
+      max-width: rem(450);
+    }
+    img {
+      width: 100%;
+    }
+
+     h1 {
+      font-size: rem(80);
+      line-height: rem(80);
+      letter-spacing: rem(-1.11);
+      padding-right: rem(80);
+      font-weight: 700;
+    }
+
+    p {
+      font-size: rem(18);
+      line-height: rem(28);
+      font-weight: 500;
+      color: $grey;
+      margin: rem(50) 0;
+      padding-right: rem(70);
+
+    } 
+
+    .learn-more-button {
+      background-color: $black;
+      color: $white;
+      font-weight: 600;
+      padding: rem(15) rem(25);
+      border-radius: rem(10);
+    }
+  }
+
+  .partners {
+    display: flex;
+    gap: rem(20);
+    margin-top: rem(100);
+  }
+
+  
 }
