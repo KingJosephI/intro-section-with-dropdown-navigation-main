@@ -15,67 +15,84 @@ a {
   text-decoration: none;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
   min-height: 3.125rem;
 }
-header .logo {
-  margin-right: 3.125rem;
-  margin-top: 0.625rem;
-}
-header nav {
-  width: 100%;
-}
-header nav ul {
-  display: flex;
-  gap: 1.25rem;
-}
-header nav ul .login {
-  margin-left: auto;
-}
-header nav ul a {
+.header a {
   font-size: 0.875rem;
   line-height: 1rem;
   font-weight: 500;
   color: #686868;
 }
-header nav ul a:hover {
+.header a:hover {
   color: #000;
 }
-header nav ul .register a {
+.header__logo {
+  margin-right: 3.125rem;
+  margin-top: 0.625rem;
+}
+.header__nav {
+  width: 100%;
+}
+.header__menu {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+.header__login {
+  margin-left: auto;
+}
+.header__register a {
   border: 0.09375rem solid #686868;
   padding: 0.625rem 1.25rem;
   border-radius: 0.3125rem;
 }
-header nav ul .register a:hover {
+.header__register a:hover {
   border-color: #000;
 }
+.header__hamburger {
+  display: none;
+}
+.header__hamburger i {
+  font-size: 2rem;
+  color: #686868;
+}
+.header__hamburger i:hover {
+  cursor: pointer;
+}
 
-section .content {
+@media screen and (max-width: 56.25rem) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__menu-item {
+    display: none;
+  }
+  .header__hamburger {
+    display: block;
+  }
+}
+.content {
   display: flex;
   margin-top: 3.125rem;
   padding: 0 9.375rem;
   gap: 1.25rem;
 }
-section .content__description {
+.content__description {
   margin-top: 4.375rem;
   max-height: 100%;
 }
-section .content picture {
-  max-width: 28.125rem;
-}
-section .content img {
-  width: 100%;
-}
-section .content h1 {
+.content__title {
   font-size: 5rem;
   line-height: 5rem;
   letter-spacing: -0.069375rem;
-  padding-right: 5rem;
+  padding-right: 4.375rem;
   font-weight: 700;
 }
-section .content p {
+.content__paragraph {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 500;
@@ -83,7 +100,7 @@ section .content p {
   margin: 3.125rem 0;
   padding-right: 4.375rem;
 }
-section .content .learn-more-button {
+.content__button {
   font-size: 1.125rem;
   line-height: 1.75rem;
   letter-spacing: -0.015625rem;
@@ -94,18 +111,51 @@ section .content .learn-more-button {
   padding: 0.9375rem 1.5625rem;
   border-radius: 0.625rem;
 }
-section .content .learn-more-button:hover {
+.content__button:hover {
   background-color: #fff;
   color: #000;
 }
-section .partners {
+.content__partners {
   display: flex;
   gap: 1.25rem;
   margin-top: 6.25rem;
 }
+.content__illustration {
+  min-width: 25rem;
+}
+.content__illustration img {
+  width: 100%;
+}
 
+@media screen and (max-width: 56.25rem) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .content__description {
+    order: 2;
+    text-align: center;
+  }
+  .content__title {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    padding-right: 0;
+  }
+  .content__paragraph {
+    padding-right: 0;
+  }
+  .content__partners {
+    justify-content: center;
+  }
+  .content__illustration {
+    max-width: 100%;
+    order: 1;
+  }
+}
 body {
   font-size: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
   font-family: "Epilogue", sans-serif;
 }/*# sourceMappingURL=index.css.map */

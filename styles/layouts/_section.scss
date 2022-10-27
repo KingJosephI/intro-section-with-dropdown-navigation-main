@@ -1,133 +1,96 @@
 @use '../abstracts/' as *;
 
-section {
-  .content {
-    display: flex;
-    margin-top: rem(50);
-    padding: 0 rem(150);
-    gap: rem(20);
+.content {
+  display: flex;
+  margin-top: rem(50);
+  padding: 0 rem(150);
+  gap: rem(20);
 
-    &__description {
-      margin-top: rem(70);
-      max-height: 100%;
-    }
+  &__description {
+    margin-top: rem(70);
+    max-height: 100%;
+  }
 
-    picture {
-      max-width: rem(450);
-    }
-    img {
-      width: 100%;
-    }
+  &__title {
+    font-size: rem(80);
+    line-height: rem(80);
+    letter-spacing: rem(-1.11);
+    padding-right: rem(70);
+    font-weight: 700;
+  }
 
-     h1 {
-      font-size: rem(80);
-      line-height: rem(80);
-      letter-spacing: rem(-1.11);
-      padding-right: rem(80);
-      font-weight: 700;
-    }
+  &__paragraph {
+    font-size: rem(18);
+    line-height: rem(28);
+    font-weight: 500;
+    color: $grey;
+    margin: rem(50) 0;
+    padding-right: rem(70);
+  } 
 
-    p {
-      font-size: rem(18);
-      line-height: rem(28);
-      font-weight: 500;
-      color: $grey;
-      margin: rem(50) 0;
-      padding-right: rem(70);
+  &__button {
+    font-size: rem(18);
+    line-height: rem(28);
+    letter-spacing: rem(-0.25);
+    background-color: $black;
+    border: rem(1.5) solid $black;
+    color: $white;
+    font-weight: 600;
+    padding: rem(15) rem(25);
+    border-radius: rem(10);
 
-    } 
-
-    .learn-more-button {
-      font-size: rem(18);
-      line-height: rem(28);
-      letter-spacing: rem(-0.25);
-      background-color: $black;
-      border: rem(1.5) solid $black;
-      color: $white;
-      font-weight: 600;
-      padding: rem(15) rem(25);
-      border-radius: rem(10);
-
-      &:hover {
-        background-color: $white;
-        color: $black;
-      }
+    &:hover {
+      background-color: $white;
+      color: $black;
     }
   }
 
-  .partners {
+  &__partners {
     display: flex;
     gap: rem(20);
     margin-top: rem(100);
   }
 
-  
+  &__illustration {
+    min-width: rem(400);
+    
+    img {
+      width: 100%;
+    }
+  }
 }
 
+
 @media screen and (max-width: rem(900)){
-  section {
-    .content {
-      // display: flex;
-      // margin-top: rem(50);
-      // padding: 0 rem(150);
-      // gap: rem(20);
-      // tac
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
   
-      &__description {
-        // margin-top: rem(70);
-        // max-height: 100%;
-      }
-  
-      picture {
-        // max-width: rem(450);
-      }
-      img {
-        // width: 100%;
-      }
-  
-       h1 {
-        // font-size: rem(80);
-        // line-height: rem(80);
-        // letter-spacing: rem(-1.11);
-        // padding-right: rem(80);
-        // font-weight: 700;
-      }
-  
-      p {
-        // font-size: rem(18);
-        // line-height: rem(28);
-        // font-weight: 500;
-        // color: $grey;
-        // margin: rem(50) 0;
-        // padding-right: rem(70);
-  
-      } 
-  
-      .learn-more-button {
-        // font-size: rem(18);
-        // line-height: rem(28);
-        // letter-spacing: rem(-0.25);
-        // background-color: $black;
-        // border: rem(1.5) solid $black;
-        // color: $white;
-        // font-weight: 600;
-        // padding: rem(15) rem(25);
-        // border-radius: rem(10);
-  
-        &:hover {
-          // background-color: $white;
-          // color: $black;
-        }
-      }
+    &__description {
+      order: 2;
+      text-align: center;
     }
   
-    .partners {
-      // display: flex;
-      // gap: rem(20);
-      // margin-top: rem(100);
+    &__title {
+      font-size: rem(36);
+      line-height: rem(42);
+      padding-right: 0;
     }
   
-    
+    &__paragraph {
+      padding-right: 0;
+    } 
+  
+    &__partners {
+      justify-content: center;
+    }
+  
+    &__illustration {
+      max-width: 100%;
+      order:1;
+    }
   }
-  
 }
+  
