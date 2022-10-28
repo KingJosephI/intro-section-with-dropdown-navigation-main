@@ -19,6 +19,7 @@ a {
   display: flex;
   align-items: center;
   min-height: 3.125rem;
+  padding: 0 2.5rem;
 }
 .header a {
   font-size: 0.875rem;
@@ -89,7 +90,7 @@ a {
   font-size: 5rem;
   line-height: 5rem;
   letter-spacing: -0.069375rem;
-  padding-right: 4.375rem;
+  padding-right: 5rem;
   font-weight: 700;
 }
 .content__paragraph {
@@ -156,6 +157,6 @@ a {
 }
 body {
   font-size: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
   font-family: "Epilogue", sans-serif;
 }/*# sourceMappingURL=index.css.map */
