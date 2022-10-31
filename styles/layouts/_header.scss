@@ -1,4 +1,5 @@
 @use '../abstracts/' as *;
+@use '../components/dropdown' as *;
 
 
 
@@ -7,6 +8,7 @@
   align-items: center;
   min-height: rem(50);
   padding: 0 rem(40);
+  max-height: 10vh !important;
 
   a {
     font-size: rem(14);
@@ -30,8 +32,9 @@
   
   &__menu {
     display: flex;
-    gap: rem(20);
     align-items: center;
+    gap: rem(50);
+    
   }
 
   &__login {
@@ -66,6 +69,7 @@
   .header {
     display: flex;
     justify-content: space-between;
+    // margin-bottom: 100px;
    
     &__menu-item {
       display: none;

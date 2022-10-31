@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./dist/index.css" />
-    <script src="./test.js" defer></script>
+    <script src="./script.js" defer></script>
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
@@ -27,8 +27,51 @@
       </picture>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li class="header__menu-item"><a href="#">Features</a></li>
-          <li class="header__menu-item"><a href="#">Company</a></li>
+          <li class="header__menu-item dropdown">
+            <button class="dropdown__title">
+              <a href="#" class="dropdown__link">Features</a>
+              <img
+                src="./images/icon-arrow-down.svg"
+                class="arrow-down"
+                alt=""
+              />
+              <img src="./images/icon-arrow-up.svg" class="arrow-up" alt="" />
+            </button>
+            <ul class="dropdown__menu">
+              <li>
+                <div><img src="./images/icon-todo.svg" /></div>
+                <span>Todo List</span>
+              </li>
+              <li>
+                <div><img src="./images/icon-calendar.svg" /></div>
+                <span>Calendar</span>
+              </li>
+              <li>
+                <div><img src="./images/icon-reminders.svg" /></div>
+                <span>Reminders</span>
+              </li>
+              <li>
+                <div><img src="./images/icon-planning.svg" /></div>
+                <span>Planning</span>
+              </li>
+            </ul>
+          </li>
+          <li class="header__menu-item dropdown">
+            <button class="dropdown__title">
+              <a href="#" class="dropdown__link">Company</a>
+              <img
+                src="./images/icon-arrow-down.svg"
+                class="arrow-down"
+                alt=""
+              />
+              <img src="./images/icon-arrow-up.svg" class="arrow-up" alt="" />
+            </button>
+            <ul class="dropdown__menu">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
           <li class="header__menu-item"><a href="#">Careers</a></li>
           <li class="header__menu-item"><a href="#">About</a></li>
           <li class="header__menu-item header__login"><a href="#">Login</a></li>
