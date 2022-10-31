@@ -23,6 +23,7 @@ a {
 }
 .dropdown .arrow-down {
   display: inline;
+  cursor: pointer;
 }
 .dropdown__title {
   border: none;
@@ -52,8 +53,17 @@ a {
   cursor: pointer;
   background-color: rgb(230, 229, 229);
 }
-.dropdown > .dropdown__title:hover + .dropdown__menu {
+.dropdown__title.active + .dropdown__menu {
   opacity: 1;
+}
+.dropdown__title.active {
+  cursor: pointer;
+}
+.dropdown__title.active .arrow-up {
+  display: inline;
+}
+.dropdown__title.active .arrow-down {
+  display: none;
 }
 
 .header {
